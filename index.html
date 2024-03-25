@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        gap: 200px;
+    }
+
+ h1 {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    font-weight: 900;
+    margin: 0;
+ }
+
+.one {
+    animation: myAnim 2s ease 1 normal forwards;
+}
+
+.two {
+    animation: myAnim 3s ease 1 normal forwards;
+}
+
+.three {
+    animation: myAnim 4s ease 1 normal forwards;
+}
+
+.four {
+    animation: myAnim 5s ease 1 normal forwards;
+}
+
+.five {
+    animation: myAnim 6s ease 1 normal forwards;
+}
+
+.six {
+    animation: myAnim 8s ease 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		display: block;
+        opacity: 100;
+	}
+
+
+
+	100% {
+        opacity: 0;
+		display: none;
+	}
+}
+
+</style>
+
+<body>
+    <div class="container">
+
+    <h1 class="one">Hey</h1>
+    <h1 class="two">Hey Baby,</h1>
+    <h1 class="three">Beautiful</h1>
+    <h1 class="four">Beautiful</h1>
+    <h1 class="five">Beautiful</h1>
+    <h1 class="six">Angel</h1>
+</div>
+</body>
+</html>
