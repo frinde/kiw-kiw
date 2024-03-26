@@ -18,68 +18,87 @@
     .container {
         width: 70%;
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 100vh;
-        gap: 200px;
+
     }
 
- h1 {
-    width: 100%;
-    display: block;
-    opacity: 0;
-    font-weight: 900;
-    margin: 0;
- }
+    h1 {
+        position: absolute;
+        margin: 0;
+        text-align: center;
+        width: fit-content;
+        border-bottom: 2px solid black;
+        padding: 2px;
+        background-color: rgb(243, 239, 21);
+    }
 
-.one {
-    animation: myAnim 2s ease 1 normal forwards;
-}
+    #on {
+        animation: myAnim 2s ease normal forwards;
+        animation-delay: 0s;
+        opacity: 0;
+    }
+    #tw {
+        animation: myAnim 2s ease normal forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    #th {
+        animation: myAnim 1s ease normal forwards;
+        animation-delay: 4s;
+        opacity: 0;
+    }
+    #fo {
+        animation: myAnim 1s ease normal forwards;
+        animation-delay: 5s;
+        opacity: 0;
+    }
+    #fv {
+        animation: myAnim 1s ease normal forwards;
+        animation-delay: 6s;
+        opacity: 0;
+    }
+    #si {
+        animation: myAnim 2s ease normal forwards;
+        animation-delay: 7s;
+        opacity: 0;
+    }
+    #sv {
+        animation: myAnim 0.2s ease normal forwards;
+        animation-delay: 9s;
+        opacity: 0;
+    }
 
-.two {
-    animation: myAnim 3s ease 1 normal forwards;
-}
-
-.three {
-    animation: myAnim 4s ease 1 normal forwards;
-}
-
-.four {
-    animation: myAnim 5s ease 1 normal forwards;
-}
-
-.five {
-    animation: myAnim 6s ease 1 normal forwards;
-}
-
-.six {
-    animation: myAnim 8s ease 1 normal forwards;
-}
-
-@keyframes myAnim {
+    @keyframes myAnim {
 	0% {
 		display: block;
         opacity: 100;
 	}
 
-
-
 	100% {
-        opacity: 0;
 		display: none;
 	}
+}
+
+p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 </style>
 
 <body>
     <div class="container">
-
-    <h1 class="one">Hey</h1>
-    <h1 class="two">Hey Baby,</h1>
-    <h1 class="three">Beautiful</h1>
-    <h1 class="four">Beautiful</h1>
-    <h1 class="five">Beautiful</h1>
-    <h1 class="six">Angel</h1>
+        <h1 id="on">Hey</h1>
+        <h1 id="tw" style="border-bottom: 0px; text-decoration: underline;">Hey Baby,</h1>
+        <h1 id="th">Beautiful</h1>
+        <h1 id="fo">Beautiful</h1>
+        <h1 id="fv">Beautiful</h1>
+        <h1 id="si" style="text-decoration: underline; color: white; border-bottom: 0px; background-color: rgb(0, 0, 0);">Angel</h1>
+        <h1 id="sv" style="font-size: 0.6rem; background-color: transparent;">Naila <p>ahaq kwkwkwk</p></h1>
 </div>
 </body>
 </html>
